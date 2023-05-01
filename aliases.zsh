@@ -13,8 +13,6 @@ alias version="commit 'version'"
 alias dotfiles="cd $DOTFILES"
 alias library="cd $HOME/Library"
 alias sites="cd $HOME/Sites"
-alias lara="sites && cd laravel/"
-alias docs="lara && cd docs/"
 
 # Laravel
 alias a="php artisan"
@@ -22,6 +20,9 @@ alias fresh="php artisan migrate:fresh --seed"
 alias tinker="php artisan tinker"
 alias seed="php artisan db:seed"
 alias serve="php artisan serve"
+alias mt="php artisan make:test"
+alias mtu="php artisan make:test --unit "
+alias ideh="php artisan ide-helper:eloquent && php artisan ide-helper:generate && php artisan ide-helper:meta && php artisan ide-helper:models -N"
 
 # PHP
 alias cfresh="rm -rf vendor/ composer.lock && composer i"
@@ -35,7 +36,7 @@ alias watch="npm run watch"
 alias docker-composer="docker-compose"
 
 # SQL Server
-alias mssql="docker run -e ACCEPT_EULA=Y -e SA_PASSWORD=LaravelWow1986! -p 1433:1433 mcr.microsoft.com/mssql/server:2017-latest"
+# alias mssql="docker run -e ACCEPT_EULA=Y -e SA_PASSWORD=LaravelWow1986! -p 1433:1433 mcr.microsoft.com/mssql/server:2017-latest"
 
 # Git
 alias gst="git status"
