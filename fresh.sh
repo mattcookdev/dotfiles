@@ -17,7 +17,8 @@ fi
 
 # Removes .zshrc from $HOME (if it exists) and symlinks the .zshrc file from the .dotfiles
 rm -rf $HOME/.zshrc
-ln -s .zshrc $HOME/.zshrc
+# ln -s .zshrc $HOME/.zshrc
+ln -s ~/.dotfiles/.zshrc ~/.zshrc
 
 # Update Homebrew recipes
 brew update
@@ -33,7 +34,7 @@ brew bundle --file ./Brewfile
 pecl install imagick redis swoole
 
 # Install global Composer packages
-/usr/local/bin/composer global require laravel/installer laravel/valet beyondcode/expose spatie/global-ray spatie/visit
+/usr/local/bin/composer global require tightenco/takeout laravel/installer laravel/valet beyondcode/expose spatie/global-ray spatie/visit
 
 # Install Laravel Valet
 $HOME/.composer/vendor/bin/valet install
@@ -52,7 +53,8 @@ mkdir $HOME/Sites/sandbox
 ./clone.sh
 
 # Symlink the Mackup config file to the home directory
-ln -s .mackup.cfg $HOME/.mackup.cfg
+# ln -s .mackup.cfg $HOME/.mackup.cfg
+ln -s ~/.dotfiles/.mackup.cfg ~/.mackup.cfg
 
 # Set macOS preferences - we will run this last because this will reload the shell
 source ./.macos

@@ -40,7 +40,6 @@ brew 'node'
 
 # Apps
 cask '1password'
-cask 'cleanshot'
 cask 'discord'
 cask 'docker'
 cask 'figma'
@@ -56,6 +55,8 @@ cask 'orion'
 cask 'phpmon'
 cask 'ray'
 cask 'raycast'
+cask 'rectangle'
+cask 'shottr'
 cask 'spotify'
 cask 'tableplus'
 cask 'telegram'
@@ -76,5 +77,4 @@ cask 'font-source-sans-pro'
 cask 'font-source-serif-pro'
 
 # Mac App Store
-# mas 'Keynote', id: 409183694
-# mas 'Numbers', id: 409203825
+mas 'Hidden Bar', id: 1452453066
