@@ -21,7 +21,6 @@ brew 'mackup'
 brew 'mas' # Mac App Store manager
 brew 'pkg-config' # https://github.com/driesvints/dotfiles/issues/20
 brew 'stripe/stripe-cli/stripe'
-brew 'stripe/stripe-mock/stripe-mock'
 brew 'svn' # Needed to install fonts
 
 # Spatie Medialibrary
@@ -37,52 +36,31 @@ brew 'php@8.0'
 brew 'php@7.4'
 brew 'composer'
 brew 'imagemagick'
-# brew 'meilisearch'
-# brew 'mysql'
-# brew 'nginx'
 brew 'node'
-# brew 'redis'
-# brew 'yarn'
 
 # Apps
 cask '1password'
 cask 'cleanshot'
-# cask 'caffeine'
-# cask 'dbngin'
 cask 'discord'
 cask 'docker'
 cask 'figma'
-# cask 'firefox'
 cask 'github'
 cask 'google-chrome'
-# cask 'helo'
 cask 'imageoptim'
-cask 'inna'
 cask 'insomnia'
 cask 'iterm2'
 cask 'keka'
-cask 'lulu'
 cask 'mullvadvpn'
 cask 'notion'
 cask 'orion'
-# cask 'pastebot'
 cask 'phpmon'
 cask 'ray'
-# cask 'readdle-spark'
-# cask 'screenflow'
-# cask 'slack'
+cask 'raycast'
 cask 'spotify'
 cask 'tableplus'
-cash 'telegram'
+cask 'telegram'
 cask 'ticktick'
-# cask 'the-unarchiver'
-# cask 'tinkerwell'
-# cask 'transmit'
-# cask 'tunnelbear'
-# cask 'tuple'
 cask 'visual-studio-code'
-# cask 'zoom'
-# cask 'zwift'
 
 # Quicklook
 cask 'qlmarkdown'
@@ -98,10 +76,5 @@ cask 'font-source-sans-pro'
 cask 'font-source-serif-pro'
 
 # Mac App Store
-# mas 'Byword', id: 420212497
-# mas 'Giphy Capture', id: 668208984
 # mas 'Keynote', id: 409183694
 # mas 'Numbers', id: 409203825
-# mas 'Speedtest', id: 1153157709
-# mas 'Spring', id: 1508706541
-# mas 'Things', id: 904280696
