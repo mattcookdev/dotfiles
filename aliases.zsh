@@ -20,8 +20,8 @@ alias fresh="php artisan migrate:fresh --seed"
 alias tinker="php artisan tinker"
 alias seed="php artisan db:seed"
 alias serve="php artisan serve"
-alias mt="php artisan make:test"
-alias mtu="php artisan make:test --unit "
+alias mt="php artisan make:test --pest "
+alias mtu="php artisan make:test --pest --unit "
 alias ideh="php artisan ide-helper:eloquent && php artisan ide-helper:generate && php artisan ide-helper:meta && php artisan ide-helper:models -N"
 
 # PHP

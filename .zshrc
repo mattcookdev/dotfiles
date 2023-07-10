@@ -79,7 +79,7 @@ ZSH_CUSTOM=$DOTFILES
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-    artisan 
+    artisan
     git
     zsh-autosuggestions
 )
@@ -93,6 +93,9 @@ source $ZSH/oh-my-zsh.sh
 # You may need to manually set your language environment
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
+
+# Fix Homebrew auto upgrade
+export HOMEBREW_NO_AUTO_UPDATE=1
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
