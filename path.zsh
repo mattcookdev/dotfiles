@@ -13,6 +13,10 @@ export PATH="node_modules/.bin:vendor/bin:$PATH"
 # Load Docker
 export PATH="$HOME/.docker/bin:$PATH"
 
+# Add Bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
 # Make sure coreutils are loaded before system commands
 # I've disabled this for now because I only use "ls" which is
 # referenced in my aliases.zsh file directly.
