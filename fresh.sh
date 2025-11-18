@@ -20,6 +20,10 @@ rm -rf $HOME/.zshrc
 # ln -s .zshrc $HOME/.zshrc
 ln -s ~/.dotfiles/.zshrc ~/.zshrc
 
+# Symlink tmux config
+rm -rf $HOME/.tmux.conf
+ln -s ~/.dotfiles/.tmux.conf ~/.tmux.conf
+
 # Update Homebrew recipes
 brew update
 

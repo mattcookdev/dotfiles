@@ -169,3 +169,21 @@ export HERD_PHP_80_INI_SCAN_DIR="/Users/matt/Library/Application Support/Herd/co
 
 # Herd injected PHP 7.4 configuration.
 export HERD_PHP_74_INI_SCAN_DIR="/Users/matt/Library/Application Support/Herd/config/php/74/"
+
+# bun completions
+[ -s "/Users/matt/.bun/_bun" ] && source "/Users/matt/.bun/_bun"
+
+
+# Herd injected PHP 8.4 configuration.
+export HERD_PHP_84_INI_SCAN_DIR="/Users/matt/Library/Application Support/Herd/config/php/84/"
+
+
+# Generated for pdtm. Do not edit.
+export PATH=$PATH:/Users/matt/.pdtm/go/bin
+
+
+. "$HOME/.local/bin/env"
+
+
+# Herd injected PHP 8.5 configuration.
+export HERD_PHP_85_INI_SCAN_DIR="/Users/matt/Library/Application Support/Herd/config/php/85/"
