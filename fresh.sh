@@ -35,30 +35,19 @@ brew bundle --file ./Brewfile
 # mysql -u root -e "ALTER USER root@localhost IDENTIFIED WITH mysql_native_password BY 'password'; FLUSH PRIVILEGES;"
 
 # Install PHP extensions with PECL
-pecl install imagick redis swoole
+pecl install imagick redis
 
 # Install global Composer packages
-/usr/local/bin/composer global require tightenco/takeout laravel/installer laravel/valet beyondcode/expose spatie/global-ray spatie/visit
+/usr/local/bin/composer global require tightenco/takeout laravel/installer
 
-# Install Laravel Valet
-$HOME/.composer/vendor/bin/valet install
-
-# Install Global Ray
-$HOME/.composer/vendor/bin/global-ray install
+# Disable "Last login" message
+[ ! -f ~/.hushlogin ] && touch ~/.hushlogin
 
 # Create a Sites directory
 mkdir $HOME/Sites
 
-# Create sites subdirectories
-mkdir $HOME/Sites/open-source
-mkdir $HOME/Sites/sandbox
-
 # Clone Github repositories
 ./clone.sh
-
-# Symlink the Mackup config file to the home directory
-# ln -s .mackup.cfg $HOME/.mackup.cfg
-ln -s ~/.dotfiles/.mackup.cfg ~/.mackup.cfg
 
 # Set macOS preferences - we will run this last because this will reload the shell
 source ./.macos
