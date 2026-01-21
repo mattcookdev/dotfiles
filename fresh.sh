@@ -38,7 +38,7 @@ brew bundle --file ./Brewfile
 pecl install imagick redis
 
 # Install global Composer packages
-/usr/local/bin/composer global require tightenco/takeout laravel/installer
+/usr/local/bin/composer global require laravel/installer
 
 # Disable "Last login" message
 [ ! -f ~/.hushlogin ] && touch ~/.hushlogin
