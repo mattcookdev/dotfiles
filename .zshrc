@@ -13,7 +13,7 @@ export MNML_RPROMPT=('mnml_cwd 20')
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+ZSH_THEME="themes/spaceship-prompt/spaceship"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -79,6 +79,7 @@ plugins=(
     artisan
     git
     zsh-autosuggestions
+    zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -113,6 +114,24 @@ export HOMEBREW_NO_AUTO_UPDATE=1
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# Autosuggest settings
+ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE="20"
+ZSH_AUTOSUGGEST_USE_ASYNC=1
+
+# Spaceship settings
+SPACESHIP_PROMPT_ASYNC=true
+SPACESHIP_PROMPT_ADD_NEWLINE=true
+SPACESHIP_CHAR_SYMBOL="⚡"
+
+# Minimal spaceship sections for performance
+SPACESHIP_PROMPT_ORDER=(
+  time
+  user
+  dir
+  git
+  line_sep
+  char
+)
 
 # Herd injected PHP binary.
 export PATH="$HOME/Library/Application Support/Herd/bin/":$PATH
