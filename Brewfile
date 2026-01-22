@@ -31,6 +31,7 @@ brew 'node'
 
 # Apps
 cask '1password'
+cask 'another-redis-desktop-manager'
 cask 'cleanshot'
 cask 'cursor'
 cask 'discord'
@@ -39,12 +40,12 @@ cask 'ghostty'
 cask 'github'
 cask 'helium-browser'
 cask 'herd'
+cask 'jordanbaird-ice'
 cask 'imageoptim'
 cask 'keka'
 cask 'localsend'
 cask 'mullvadvpn'
 cask 'notion'
-# cask 'opencode'
 cask 'raycast'
 cask 'rectangle'
 cask 'spotify'
@@ -63,5 +64,4 @@ cask 'font-fira-code'
 cask 'font-fira-code-nerd-font'
 
 # Mac App Store
-mas 'Hidden Bar', id: 1452453066
 mas 'Unsplash Wallpapers', id: 1284863847
