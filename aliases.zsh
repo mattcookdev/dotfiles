@@ -69,6 +69,7 @@ alias gst='git status'
 alias glog="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 alias nuke="git reset --hard && git clean -df"
 alias gac="git add -A && git commit -m"
+alias lg="lazygit"
 
 #-----------------------------------------------------------------------------------#
 #	*END* GIT
