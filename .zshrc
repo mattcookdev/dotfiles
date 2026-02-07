@@ -108,6 +108,9 @@ export LANG=en_US.UTF-8
 # Fix Homebrew auto upgrade
 export HOMEBREW_NO_AUTO_UPDATE=1
 
+# Fix Anthropic/Claude nonsense...
+export CLAUDE_CODE_DISABLE_AUTO_MEMORY=1
+
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
 #   export EDITOR='vim'
